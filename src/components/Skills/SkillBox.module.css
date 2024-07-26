@@ -1,0 +1,24 @@
+.box {
+  width: 192px;
+  height: 64px;
+  margin: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  background-color: white;
+}
+
+.boxImage {
+  width: 48px;
+  height: 48px;
+}
+
+.boxText {
+  height: 48px;
+  margin-left: 16px;
+  align-content: center;
+  font-size: large;
+  /* background-color: blueviolet; */
+}

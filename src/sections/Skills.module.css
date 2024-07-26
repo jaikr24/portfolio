@@ -1,0 +1,30 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+}
+
+.description {
+  width: 80vw;
+  background-color: seagreen;
+  
+}
+
+/* .skillsGrid {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(4, auto);
+  background-color: aqua;
+} */
+
+.skillsGrid {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: aqua;
+}

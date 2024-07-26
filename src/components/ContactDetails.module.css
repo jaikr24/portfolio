@@ -1,0 +1,18 @@
+.contactItems {
+  list-style: none;
+}
+
+.itemType {
+  height: 72px;
+  width: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: difference;
+  background-color: var(--color-1);
+  border-radius: 100%;
+}
+
+.listItem {
+  display: flex;
+}
