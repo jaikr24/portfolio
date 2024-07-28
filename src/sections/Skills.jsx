@@ -5,7 +5,7 @@ function Skills() {
   return (
     <div className={styles.skills}>
       <div className={styles.description}>
-        <h4>Technologies and Tools</h4>
+        <h1>Tools and Technologies</h1>
         <p>Demo paragraph</p>
       </div>
       <div className={styles.skillsGrid}>

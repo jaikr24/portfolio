@@ -1,7 +1,65 @@
-.navBar {
-  height: 80px;
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap");
+
+a {
+  text-decoration: none;
+  color: var(--main);
+  font-weight: 500;
+}
+
+.nav {
+  height: 10dvh;
   width: 100vw;
   position: fixed;
-  z-index: 200;
-  background-color: var(--color-5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.navBar {
+  height: 8dvh;
+  width: 96vw;
+  position: fixed;
+  border-radius: 1em;
+
+  /* From https://css.glass */
+  /* background: rgba(34, 38, 41, .3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); */
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.32);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLogo {
+  margin: 1em;
+  padding: 0.5em;
+  /* background-color: pink; */
+  color: var(--color-2-backup);
+  /* color: var(--main); */
+  font-family: "Playwrite DK Loopet", cursive;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.navItems {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    margin: 1em;
+    padding: 0.5em;
+    border-bottom: 0.2em solid var(--main);
+  }
 }

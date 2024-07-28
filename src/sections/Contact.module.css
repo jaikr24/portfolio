@@ -1,5 +1,28 @@
+.contact {
+  padding: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  width: 80vw;
+  h4 {
+    font-size: xx-large;
+    padding: 0em 0em 0em 1em;
+  }
+}
 .contactContainer {
   display: flex;
+  width: 80vw;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+.detailsContainer {
+  h4 {
+    font-size: xx-large;
+    padding: 0em 0em 1em 1em;
+  }
 }

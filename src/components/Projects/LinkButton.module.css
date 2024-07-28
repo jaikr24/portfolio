@@ -1,0 +1,21 @@
+.linkButton {
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5em 1em ;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--main);
+
+  p {
+    font-size: large;
+    color: white;
+  }
+  img {
+    width: 1.5em;
+    /* height: 2em; */
+    margin-left: 1em;
+  }
+}

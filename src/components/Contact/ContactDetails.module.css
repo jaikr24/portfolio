@@ -1,0 +1,36 @@
+.contactDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactItems {
+  list-style: none;
+}
+
+.itemDescription {
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--main);
+}
+
+.itemType {
+  height: 5em;
+  width: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: var(--main);
+
+  img {
+    width: 1.5em;
+  }
+}
+
+.listItem {
+  margin: 2em;
+  display: flex;
+}

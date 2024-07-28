@@ -7,3 +7,16 @@
   --color-4: #474b4f;
   --color-5: #6b6e70;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  background-color: var(--color-2-backup);
+  font-size: large;
+  color: white;
+}

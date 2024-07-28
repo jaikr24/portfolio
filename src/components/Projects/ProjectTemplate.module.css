@@ -1,0 +1,66 @@
+.projectTemplate {
+  width: 60vw;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  background-color: white;
+  border-radius: 0.5em;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  color: var(--main);
+}
+
+.designElement {
+  width: 80%;
+  height: 0.5em;
+  margin-left: 2em;
+  border-radius: 0em 0em 1em 1em;
+  background-color: orange;
+}
+
+.detailsSection {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+.dataContainer {
+  padding: 1em;
+  border-radius: inherit;
+}
+
+.projectTitle {
+  font-size: x-large;
+}
+
+.projectDescription {
+  padding-top: 1em;
+  text-align: justify;
+  font-size: medium;
+  line-height: 1.5rem;
+}
+
+.techStackAndLinkSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 1em 1em 0em;
+}
+
+.techStack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 1.5em;
+    margin: 0em 1em 0em 1em;
+  }
+}
+
+.techStackIcon {
+  display: flex;
+  align-items: center;
+  p {
+    padding: 4px;
+    font-size: x-large;
+    color: var(--main);
+  }
+}

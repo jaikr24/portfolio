@@ -1,30 +1,35 @@
 .skills {
+  padding-bottom: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: pink;
+  background-color: var(--main);
 }
 
 .description {
   width: 80vw;
-  background-color: seagreen;
-  
+  padding: 0em 0em 2em 2em;
+  padding-top: 10vh;
+  color: white;
+  * {
+    margin-bottom: 10px;
+  }
+}
+
+.skillsGrid {
+  width: 80vw;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  /* background-color: aqua; */
 }
 
 /* .skillsGrid {
-  height: 100vh;
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(5, auto);
-  grid-template-rows: repeat(4, auto);
-  background-color: aqua;
-} */
-
-.skillsGrid {
   width: 80vw;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: aqua;
-}
+} */

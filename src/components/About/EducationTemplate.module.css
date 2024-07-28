@@ -1,0 +1,40 @@
+.educationTemplate {
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+.detailsSection {
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3 {
+    color: var(--color-2-backup);
+  }
+}
+
+.icon {
+  width: 5em;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: white;
+
+  img {
+    width: 2em;
+  }
+}
+
+.locationSession {
+  display: flex;
+  p {
+    margin-right: 0.5em;
+  }
+}
+
+.session {
+  color: gray;
+}

@@ -1,0 +1,11 @@
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
+    width: 35%;
+    /* background-color: pink; */
+    img {
+      height: 30px;
+    }
+  }

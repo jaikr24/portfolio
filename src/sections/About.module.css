@@ -1,0 +1,47 @@
+.about {
+  /* margin-top: 10vh; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  color: white;
+  background-color: var(--main);
+}
+
+/* .educationDetails {
+  width: 50vw;
+  height: inherit;
+  padding-top: 10vh;
+  padding-left: 10dvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.educationHeading {
+    font-size: xx-large;
+    padding: 0em 0em 2em 1em;
+}
+
+.educationDetails {
+  width: 50vw;
+  height: inherit;
+  padding-top: 10vh;
+  padding-left: 10dvw;
+  display: flex;
+  grid-template-rows: auto 1fr;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.educationGraphic {
+  width: 50vw;
+  height: inherit;
+  img {
+    width: inherit;
+    height: inherit;
+    border-radius: 1em 0em 0em 1em;
+    object-fit: cover;
+  }
+}
+
+
