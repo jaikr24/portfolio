@@ -7,17 +7,27 @@ a {
 }
 
 .nav {
-  height: 10dvh;
+  height: 5.5rem;
   width: 100vw;
   position: fixed;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  /* animation: navbarAnimation linear forwards;
+  animation-timeline: scroll();
+  animation-range: 3.5em 10em; */
 }
 
+/* @keyframes navbarAnimation {
+  to {
+    transform: translateY(-100%);
+  }
+} */
+
 .navBar {
-  height: 8dvh;
+  height: 3.5em;
   width: 96vw;
   position: fixed;
   border-radius: 1em;
@@ -43,10 +53,7 @@ a {
 
 .navLogo {
   margin: 1em;
-  padding: 0.5em;
-  /* background-color: pink; */
-  color: var(--color-2-backup);
-  /* color: var(--main); */
+  color: var(--main);
   font-family: "Playwrite DK Loopet", cursive;
   font-size: 2em;
   font-weight: 600;
@@ -55,11 +62,18 @@ a {
 .navItems {
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 0.5em;
   list-style: none;
   li {
     margin: 1em;
     padding: 0.5em;
+
     border-bottom: 0.2em solid var(--main);
+  }
+}
+
+@keyframes borderAnimation {
+  to {
+    border-bottom: 0.2em solid var(--color-2-backup);
   }
 }

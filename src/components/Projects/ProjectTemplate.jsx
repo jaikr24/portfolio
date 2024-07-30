@@ -15,8 +15,11 @@ function ProjectTemplate({ project }) {
       <div className={styles.techStackAndLinkSection}>
         <div className={styles.techStack}>
           <div className={styles.techStackIcon}>
-            <img src="./svg/tech-stack.svg" alt="" />
-            <p className={styles.colon}>|</p>
+            {/* <img src="./svg/tech-stack.svg" alt="" /> */}
+
+            <p className={styles.colon}>
+              <strong>Tech Stack :</strong>
+            </p>
           </div>
           <div>
             {project.techStack.map((item) => (

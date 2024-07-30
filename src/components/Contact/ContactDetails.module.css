@@ -25,12 +25,40 @@
   border-radius: 100%;
   background-color: var(--main);
 
+  animation: popAnimation 0.5s ease;
+  animation-timeline: view(block 80% 0%);
+
   img {
     width: 1.5em;
+  }
+}
+
+@keyframes popAnimation {
+  from {
+    transform: scale(0%);
+    opacity: 0%;
+  }
+  to {
+    transform: scale(100%);
   }
 }
 
 .listItem {
   margin: 2em;
   display: flex;
+
+  animation: textAnimation 0.5s ease;
+  animation-timeline: view(block 80% 0%);
+}
+
+@keyframes textAnimation {
+  from {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+  }
 }

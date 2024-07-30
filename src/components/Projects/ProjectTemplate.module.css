@@ -35,13 +35,14 @@
   text-align: justify;
   font-size: medium;
   line-height: 1.5rem;
+  color: var(--main);
 }
 
 .techStackAndLinkSection {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0em 1em 1em 0em;
+  padding: 0em 1em 1em 1em;
 }
 
 .techStack {
@@ -59,8 +60,8 @@
   display: flex;
   align-items: center;
   p {
-    padding: 4px;
-    font-size: x-large;
+    /* padding: 4px; */
+    font-size: large;
     color: var(--main);
   }
 }

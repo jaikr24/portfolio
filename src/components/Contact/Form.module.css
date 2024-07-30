@@ -4,6 +4,25 @@
   justify-content: center;
   align-items: center;
 }
+.inputContainer {
+  animation: formAnimation 0.5s ease;
+  animation-timeline: view(block 100% 0%);
+}
+
+@keyframes formAnimation {
+  0% {
+    transform: translateX(250%);
+    opacity: 0;
+    filter: blur(0.5em);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
 
 .contactForm {
   width: 40dvw;
@@ -24,6 +43,7 @@
     border-radius: 4px;
   }
 }
+
 
 .row1 {
   display: grid;

@@ -1,5 +1,53 @@
 .projects {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
+  padding: 5.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: aqua; */
+  background-color: var(--main);
+}
+
+.sectionHeading {
+  width: 80vw;
+  padding: 0em 0em 2em 0em;
+}
+
+.sectionTitle {
+  font-size: xx-large;
+  margin-bottom: 0.5em;
+}
+
+.projectsContainer {
+  width: 80vw;
   /* background-color: pink; */
+}
+
+.projectOdd {
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: end;
+  animation: projectSlideLeft 1s ease;
+  animation-timeline: view(block 60% 0%);
+}
+.projectEven {
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: start;
+  animation: projectSlideRight ease;
+  animation-timeline: view(block 60% 0%);
+}
+
+@keyframes projectSlideRight {
+  from {
+    translate: -10%;
+    opacity: 0;
+  }
+}
+@keyframes projectSlideLeft {
+  from {
+    translate: 10%;
+    opacity: 0;
+  }
 }

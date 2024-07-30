@@ -3,7 +3,7 @@ import styles from "./LinkButton.module.css";
 function LinkButton({ link }) {
   return (
     <div>
-      <a href={link}>
+      <a href={link} target="_blank" rel="noreferrer">
         <div className={styles.linkButton}>
           <p>Open</p>
           <img

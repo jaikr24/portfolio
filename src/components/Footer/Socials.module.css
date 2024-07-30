@@ -1,11 +1,21 @@
 .socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 30px;
-    width: 35%;
-    /* background-color: pink; */
-    img {
-      height: 30px;
-    }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 12rem;
+
+  img {
+    height: 2rem;
+    animation: socialsAnimation ease;
+    animation-timeline: view(block 100% 0%);
   }
+}
+
+@keyframes socialsAnimation {
+  0% {
+    transform: scale(20%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}

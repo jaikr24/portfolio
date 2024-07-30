@@ -3,9 +3,9 @@ import styles from "./ContactDetails.module.css";
 
 const data = [
   {
-    name: "Address",
-    icon: "./svg/contact/location-dot-solid.svg",
-    value: "Madhubani - 847211",
+    name: "Email",
+    icon: "./svg/contact/envelope-solid.svg",
+    value: "shubham.kuumar.1990111@gmail.com",
   },
   {
     name: "Phone",
@@ -13,9 +13,9 @@ const data = [
     value: "+91 9470010407",
   },
   {
-    name: "Email",
-    icon: "./svg/contact/envelope-solid.svg",
-    value: "shubham.kuumar.1990111@gmail.com",
+    name: "Address",
+    icon: "./svg/contact/location-dot-solid.svg",
+    value: "Madhubani - 847211",
   },
 ];
 
