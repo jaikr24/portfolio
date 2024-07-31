@@ -10,10 +10,10 @@
 
 .designElement {
   width: 80%;
-  height: 0.5em;
+  height: 0.25em;
   margin-left: 2em;
   border-radius: 0em 0em 1em 1em;
-  background-color: orange;
+  background-color: var(--color-2-backup);
 }
 
 .detailsSection {
@@ -53,6 +53,10 @@
   img {
     width: 1.5em;
     margin: 0em 1em 0em 1em;
+  }
+
+  * {
+    user-select: none;
   }
 }
 

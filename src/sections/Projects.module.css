@@ -1,17 +1,18 @@
 .projects {
-  /* height: 100vh; */
   width: 100vw;
   padding: 5.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: aqua; */
   background-color: var(--main);
+  color: white;
+  /* background-color: aqua; */
 }
 
 .sectionHeading {
   width: 80vw;
   padding: 0em 0em 2em 0em;
+  /* background-color: aqua; */
 }
 
 .sectionTitle {

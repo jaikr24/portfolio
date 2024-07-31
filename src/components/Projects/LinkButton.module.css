@@ -1,7 +1,7 @@
 .linkButton {
   width: fit-content;
   height: fit-content;
-  padding: 0.5em 1em ;
+  padding: 0.5em 1em;
   border-radius: 0.5em;
   display: flex;
   align-items: center;
@@ -15,7 +15,11 @@
   }
   img {
     width: 1.5em;
-    /* height: 2em; */
     margin-left: 1em;
   }
+}
+
+.linkButton:active {
+  scale: 96%;
+  opacity: 96%;
 }

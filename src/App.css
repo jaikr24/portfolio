@@ -21,3 +21,8 @@ button {
   font-size: large;
   color: white;
 }
+
+button:active {
+  scale: 96%;
+  opacity: 96%;
+}

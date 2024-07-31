@@ -1,0 +1,72 @@
+.education {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  color: white;
+  display: flex;
+  background-color: var(--main);
+}
+
+.educationHeading {
+  font-size: xx-large;
+  padding: 0em 0em 2em 0em;
+}
+
+.educationDetails {
+  width: 100vw;
+  height: inherit;
+  position: absolute;
+  z-index: 2;
+  padding-top: 5.5em;
+  padding-left: 10vw;
+  display: flex;
+  grid-template-rows: auto 1fr;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.educationGraphic {
+  width: 50vw;
+  height: inherit;
+  right: 0;
+  position: absolute;
+  /* transform: rotateX(180deg);  */
+  /* animation: educationImageAnimation 0.5s ease;
+  animation-timeline: view(block 80% 0%); */
+  img {
+    width: inherit;
+    height: inherit;
+    border-radius: 1em 0em 0em 1em;
+    object-fit: cover;
+  }
+}
+
+@keyframes educationImageAnimation {
+  from {
+    transform: translateX(200%);
+    filter: blur(10px);
+    opacity: 0;
+  }
+}
+
+.cover {
+  width: 50vw;
+  display: flex;
+  height: inherit;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+
+  background-color: var(--main);
+  /* background-color: aqua; */
+
+  animation: coverAnimation 0.5s linear forwards;
+  animation-timeline: view(block 80% 0%);
+  transform-origin: left;
+}
+
+@keyframes coverAnimation {
+  to {
+    transform: scaleX(0);
+  }
+}

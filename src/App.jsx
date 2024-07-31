@@ -5,7 +5,6 @@ import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Home from "./sections/Home";
 import Projects from "./sections/Projects";
-import Skills from "./sections/Skills";
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
       <NavBar />
       <Home />
       <About />
-      <Skills />
       <Projects />
       <Contact />
       <Footer />

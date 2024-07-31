@@ -6,29 +6,29 @@ const projects = [
     name: "Quizee",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, cumque blanditiis eligendi, nulla laborum eum molestiae saepe, quam maxime reprehenderit iste fugit quos asperiores necessitatibus obcaecati distinctio quibusdam dolores praesentium? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, cumque blanditiis eligendi, nulla laborum eum molestiae saepe, quam maxime reprehenderit iste fugit quos asperiores necessitatibus obcaecati distinctio quibusdam dolores praesentium?",
-    link: "https://www.github.com/jaikr24",
+    link: "https://github.com/jaikr24/quizee",
     techStack: ["java", "android", "firebase"],
   },
   {
-    name: "Quizee",
+    name: "Connect Four",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, cumque blanditiis eligendi, nulla laborum eum molestiae saepe, quam maxime reprehenderit iste fugit quos asperiores necessitatibus obcaecati distinctio quibusdam dolores praesentium? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, cumque blanditiis eligendi, nulla laborum eum molestiae saepe, quam maxime reprehenderit iste fugit quos asperiores necessitatibus obcaecati distinctio quibusdam dolores praesentium?",
-    link: "https://www.github.com/jaikr24",
-    techStack: ["java", "android", "firebase"],
+    link: "https://github.com/jaikr24/Connect-Four",
+    techStack: ["java", "javafx"],
   },
   {
-    name: "Quizee",
+    name: "Rock Paper Scissors",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, cumque blanditiis eligendi, nulla laborum eum molestiae saepe, quam maxime reprehenderit iste fugit quos asperiores necessitatibus obcaecati distinctio quibusdam dolores praesentium? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, cumque blanditiis eligendi, nulla laborum eum molestiae saepe, quam maxime reprehenderit iste fugit quos asperiores necessitatibus obcaecati distinctio quibusdam dolores praesentium?",
-    link: "https://www.github.com/jaikr24",
-    techStack: ["java", "android", "firebase"],
+    link: "https://github.com/jaikr24/RockPaperScissors",
+    techStack: ["html", "css", "javascript"],
   },
   {
-    name: "Quizee",
+    name: "Tic Tac Toe",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, cumque blanditiis eligendi, nulla laborum eum molestiae saepe, quam maxime reprehenderit iste fugit quos asperiores necessitatibus obcaecati distinctio quibusdam dolores praesentium? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, cumque blanditiis eligendi, nulla laborum eum molestiae saepe, quam maxime reprehenderit iste fugit quos asperiores necessitatibus obcaecati distinctio quibusdam dolores praesentium?",
-    link: "https://www.github.com/jaikr24",
-    techStack: ["java", "android", "firebase"],
+    link: "https://github.com/jaikr24/tic-tac-toe",
+    techStack: ["react", "html", "css"],
   },
 ];
 
@@ -41,7 +41,9 @@ function Projects() {
       </div>
       <div className={styles.projectsContainer}>
         {projects.map((project, idx) => (
-          <div className={idx % 2 === 0 ? styles.projectEven : styles.projectOdd}>
+          <div
+            className={idx % 2 === 0 ? styles.projectEven : styles.projectOdd}
+          >
             <ProjectTemplate project={project} />
           </div>
         ))}

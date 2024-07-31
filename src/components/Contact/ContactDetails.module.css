@@ -16,7 +16,7 @@
   color: var(--main);
 }
 
-.itemType {
+.icon {
   height: 5em;
   width: 5em;
   display: flex;

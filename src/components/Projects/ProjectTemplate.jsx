@@ -4,7 +4,7 @@ import styles from "./ProjectTemplate.module.css";
 function ProjectTemplate({ project }) {
   return (
     <div className={styles.projectTemplate}>
-      {/* <div className={styles.designElement}></div> */}
+      <div className={styles.designElement}></div>
 
       <div className={styles.detailsSection}>
         <div className={styles.dataContainer}>
@@ -15,8 +15,6 @@ function ProjectTemplate({ project }) {
       <div className={styles.techStackAndLinkSection}>
         <div className={styles.techStack}>
           <div className={styles.techStackIcon}>
-            {/* <img src="./svg/tech-stack.svg" alt="" /> */}
-
             <p className={styles.colon}>
               <strong>Tech Stack :</strong>
             </p>

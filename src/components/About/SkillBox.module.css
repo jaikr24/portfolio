@@ -1,0 +1,40 @@
+.box {
+  width: 12em;
+  margin: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  background-color: white;
+  color: var(--main);
+  box-shadow: 2px 5px 16px 0px #000000, 5px 5px 15px 5px rgba(197, 197, 197, 0);
+
+  animation: skillCardAnimation 1s ease;
+  animation-timeline: view(block 70% 0%);
+
+  * {
+    user-select: none;
+  }
+}
+
+@keyframes skillCardAnimation {
+  from {
+    transform: translateY(100%);
+    filter: blur(10px);
+    transform: scale(120%);
+  }
+}
+
+.boxImage {
+  width: 3em;
+  height: 3em;
+}
+
+.boxText {
+  height: 3em;
+  margin-left: 1em;
+  align-content: center;
+  font-size: medium;
+  font-weight: 500;
+}

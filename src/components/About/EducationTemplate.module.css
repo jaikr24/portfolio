@@ -1,7 +1,23 @@
 .educationTemplate {
-  padding: 1.5em;
+  padding: 1.5em 1.5em 1.5em 0em;
   display: flex;
   align-items: center;
+  width: inherit;
+
+  animation: textAnimation 0.5s ease;
+  animation-timeline: view(block 80% 0%);
+}
+
+@keyframes textAnimation {
+  from {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+  }
 }
 
 .detailsSection {
@@ -9,8 +25,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   h3 {
     color: var(--color-2-backup);
+  }
+}
+
+@keyframes popAnimation {
+  from {
+    transform: scale(0%);
+    opacity: 0%;
+  }
+  to {
+    transform: scale(100%);
   }
 }
 
@@ -22,6 +49,9 @@
   align-items: center;
   border-radius: 100%;
   background-color: white;
+
+  animation: popAnimation 0.5s ease;
+  animation-timeline: view(block 80% 0%);
 
   img {
     width: 2em;

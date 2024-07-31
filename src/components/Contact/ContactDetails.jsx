@@ -36,7 +36,7 @@ function ContactDetails() {
 function ContactItem({ val }) {
   return (
     <>
-      <div className={styles.itemType}>
+      <div className={styles.icon}>
         <img src={val.icon} alt="" />
       </div>
       <div className={styles.itemDescription}>

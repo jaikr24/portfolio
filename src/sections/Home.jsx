@@ -1,6 +1,11 @@
 import styles from "./Home.module.css";
-import avatar from "../assets/Avatar.jpg";
 import Typewriter from "typewriter-effect";
+
+const homeData = {
+  description:
+    "As a motivated undergraduate with robust creative, problem-solving, and leadership skills, I am committed to pushing the limits in computer science engineering. My dedication lies in crafting impactful, high-quality projects that reshape technological benchmarks while contributing effectively to forward-looking organizations",
+  domains: ["Front End Developer", "Android Developer"],
+};
 
 function Home() {
   return (
@@ -11,26 +16,21 @@ function Home() {
           <h2>
             <Typewriter
               options={{
-                strings: ["Front End Developer", "Android Developer"],
+                strings: homeData.domains,
                 autoStart: true,
                 loop: true,
               }}
             />
           </h2>
 
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
-            fugiat voluptas eos aliquid earum officiis. Explicabo hic nulla ad.
-            Possimus magni iste temporibus illo nostrum in et blanditiis nobis
-            corrupti.
-          </p>
+          <p>{homeData.description}</p>
         </div>
 
         <button>Dowload Resume</button>
       </div>
 
       <div className={styles.visual}>
-        <img src={avatar} alt="" />
+        <img src="./images/avatar.jpg" alt="" />
       </div>
     </div>
   );

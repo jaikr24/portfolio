@@ -5,11 +5,13 @@
   align-items: center;
   justify-content: center;
   background-color: var(--main);
+  /* background-color: var(--color-2-backup); */
+  /* background-color: white; */
 }
 
 .description {
   width: 80vw;
-  padding: 0em 0em 2em 2em;
+  padding: 0em 0em 4em 0em;
   padding-top: 10vh;
   color: white;
   * {
@@ -21,15 +23,8 @@
   width: 80vw;
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto;
-  /* background-color: aqua; */
-}
-
-/* .skillsGrid {
-  width: 80vw;
-  display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: aqua;
-} */
+  row-gap: 2em;
+  column-gap: 1em;
+  grid-template-columns: repeat(auto-fill, 12em);
+}

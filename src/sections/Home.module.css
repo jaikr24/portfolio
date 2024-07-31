@@ -50,9 +50,19 @@
   align-items: center;
   justify-content: center;
   /* background-color: purple; */
+  animation: avatarAnimation 2s ease;
+
   img {
     padding: 4em;
     border-radius: 50%;
     width: inherit;
+  }
+}
+
+@keyframes avatarAnimation {
+  0% {
+    transform: scale(120%);
+    filter: blur(1em);
+    opacity: 30%;
   }
 }
